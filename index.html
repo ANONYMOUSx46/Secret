@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Will You Be My Valentine? 💘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        button {
+            background: white;
+            color: #ff4d6d;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background: #ffe3ea;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            margin-top: 50px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hey You 💕</h1>
+    <h2>I have a tiny confession...</h2>
+
+    <div class="card">
+        <p>
+            I’ve had a little crush on you for a while now 😳
+        </p>
+        <p>
+            I didn’t want to make things awkward, but Valentine’s Day felt like the perfect moment to ask...
+        </p>
+    </div>
+
+    <button onclick="showQuestion()">Click here 💌</button>
+
+    <div id="question" class="card hidden">
+        <h2>Will you be my Valentine? 💘</h2>
+        <p>
+            Not as a couple (unless you want 😏),
+            but just as my Valentine.
+        </p>
+        <p>
+            We could chat, laugh, maybe hang out,
+            and see where things go 🌹
+        </p>
+        <button onclick="yesAnswer()">Yes 😊</button>
+        <button onclick="maybeAnswer()">Maybe 🤭</button>
+    </div>
+
+    <div id="response" class="card hidden"></div>
+
+    <footer>
+        Made by me 💖
+    </footer>
+</div>
+
+<script>
+    function showQuestion() {
+        document.getElementById("question").classList.remove("hidden");
+    }
+
+    function yesAnswer() {
+        document.getElementById("response").classList.remove("hidden");
+        document.getElementById("response").innerHTML = "<h2>YAY! 💕</h2><p>You just made my day! Can’t wait to spend Valentine’s with you 😍</p>";
+    }
+
+    function maybeAnswer() {
+        document.getElementById("response").classList.remove("hidden");
+        document.getElementById("response").innerHTML = "<h2>That’s okay 😊</h2><p>No pressure at all. I’m just happy you checked this page 💖</p>";
+    }
+</script>
+
+</body>
+</html>
