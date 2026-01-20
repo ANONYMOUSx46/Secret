@@ -84,6 +84,7 @@ export default function App() {
         <div className={`card fade ${showCard ? "show" : ""}`}>
           <p>I’ve had a little crush on you for a while now 😳</p>
           <p>Valentine’s Day felt like the perfect moment to ask...</p>
+          <p>Will YOU be MY Valentine???</p>
 
           <button
             onClick={() =>
